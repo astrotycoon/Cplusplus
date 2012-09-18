@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: string_cmp - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP361.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/string_cmp.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"D:\code_secret\string_cmp\string_cmp.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP361.tmp" 
+<h3>Output Window</h3>
+Compiling...
+string_cmp.cpp
+D:\code_secret\string_cmp\string_cmp.cpp(6) : error C2039: 'printf' : is not a member of 'std'
+D:\code_secret\string_cmp\string_cmp.cpp(6) : error C2873: 'printf' : symbol cannot be used in a using-declaration
+D:\code_secret\string_cmp\string_cmp.cpp(6) : error C2039: 'fprintf' : is not a member of 'std'
+D:\code_secret\string_cmp\string_cmp.cpp(6) : error C2873: 'fprintf' : symbol cannot be used in a using-declaration
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+string_cmp.obj - 4 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿生成启动时间为 2012-9-6 20:19:35。
+     1>项目“D:\code_secret\const_array_c\const_array_c.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>InitializeBuildStatus:
+         正在对“.\Debug\const_array_c.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt const_array_c.c
+         const_array_c.c
+     1>d:\code_secret\const_array_c\const_array_c.c(16): error C2065: “NUM”: 未声明的标识符
+     1>d:\code_secret\const_array_c\const_array_c.c(16): error C2146: 语法错误: 缺少“;”(在标识符“number”的前面)
+     1>d:\code_secret\const_array_c\const_array_c.c(16): error C2065: “number”: 未声明的标识符
+     1>已完成生成项目“D:\code_secret\const_array_c\const_array_c.vcxproj”(rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.20

@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 9_14 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13C.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/9_14.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"D:\code_secret\9c++\9_14\9_14.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13C.tmp" 
+<h3>Output Window</h3>
+Compiling...
+9_14.cpp
+d:\code_secret\9c++\9_14\9_14.cpp(19) : error C2653: 'vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' : is not a class or namespace name
+d:\code_secret\9c++\9_14\9_14.cpp(19) : error C2065: 'const_iterator' : undeclared identifier
+d:\code_secret\9c++\9_14\9_14.cpp(19) : error C2146: syntax error : missing ';' before identifier 'iter'
+d:\code_secret\9c++\9_14\9_14.cpp(19) : error C2065: 'iter' : undeclared identifier
+d:\code_secret\9c++\9_14\9_14.cpp(19) : error C2440: '=' : cannot convert from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *' to 'int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+d:\code_secret\9c++\9_14\9_14.cpp(20) : error C2446: '!=' : no conversion from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *' to 'int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+d:\code_secret\9c++\9_14\9_14.cpp(20) : error C2040: '!=' : 'int' differs in levels of indirection from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *'
+d:\code_secret\9c++\9_14\9_14.cpp(20) : error C2143: syntax error : missing ')' before '++'
+d:\code_secret\9c++\9_14\9_14.cpp(20) : warning C4552: '!=' : operator has no effect; expected operator with side-effect
+d:\code_secret\9c++\9_14\9_14.cpp(20) : error C2059: syntax error : ';'
+d:\code_secret\9c++\9_14\9_14.cpp(20) : error C2059: syntax error : ')'
+d:\code_secret\9c++\9_14\9_14.cpp(21) : error C2143: syntax error : missing ';' before '{'
+d:\code_secret\9c++\9_14\9_14.cpp(22) : error C2100: illegal indirection
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+9_14.obj - 12 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

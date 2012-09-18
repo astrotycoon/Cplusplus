@@ -1,0 +1,71 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 5_18 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF9.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/5_18.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\code_secret\5_18\5_18.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF9.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFA.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/5_18.pdb" /debug /machine:I386 /out:"Debug/5_18.exe" /pdbtype:sept 
+.\Debug\5_18.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPFA.tmp"
+<h3>Output Window</h3>
+Compiling...
+5_18.cpp
+d:\code_secret\5_18\5_18.cpp(21) : error C2653: 'vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *> >' : is not a class or namespace name
+d:\code_secret\5_18\5_18.cpp(21) : error C2065: 'const_iterator' : undeclared identifier
+d:\code_secret\5_18\5_18.cpp(21) : error C2146: syntax error : missing ';' before identifier 'iter'
+d:\code_secret\5_18\5_18.cpp(21) : error C2065: 'iter' : undeclared identifier
+d:\code_secret\5_18\5_18.cpp(21) : error C2440: '=' : cannot convert from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > ** ' to 'int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+d:\code_secret\5_18\5_18.cpp(21) : error C2446: '!=' : no conversion from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > ** ' to 'int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+d:\code_secret\5_18\5_18.cpp(21) : error C2040: '!=' : 'int' differs in levels of indirection from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > ** '
+d:\code_secret\5_18\5_18.cpp(21) : error C2143: syntax error : missing ')' before '++'
+d:\code_secret\5_18\5_18.cpp(21) : warning C4552: '!=' : operator has no effect; expected operator with side-effect
+d:\code_secret\5_18\5_18.cpp(21) : error C2059: syntax error : ';'
+d:\code_secret\5_18\5_18.cpp(21) : error C2059: syntax error : ')'
+d:\code_secret\5_18\5_18.cpp(22) : error C2143: syntax error : missing ';' before '{'
+d:\code_secret\5_18\5_18.cpp(23) : error C2100: illegal indirection
+d:\code_secret\5_18\5_18.cpp(23) : error C2227: left of '->c_str' must point to class/struct/union
+d:\code_secret\5_18\5_18.cpp(27) : error C2653: 'vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *> >' : is not a class or namespace name
+d:\code_secret\5_18\5_18.cpp(27) : error C2065: 'size_type' : undeclared identifier
+d:\code_secret\5_18\5_18.cpp(27) : error C2146: syntax error : missing ';' before identifier 'index'
+d:\code_secret\5_18\5_18.cpp(27) : error C2065: 'index' : undeclared identifier
+d:\code_secret\5_18\5_18.cpp(27) : error C2143: syntax error : missing ')' before '++'
+d:\code_secret\5_18\5_18.cpp(27) : warning C4552: '!=' : operator has no effect; expected operator with side-effect
+d:\code_secret\5_18\5_18.cpp(27) : error C2059: syntax error : ';'
+d:\code_secret\5_18\5_18.cpp(27) : error C2059: syntax error : ')'
+d:\code_secret\5_18\5_18.cpp(28) : error C2143: syntax error : missing ';' before '{'
+d:\code_secret\5_18\5_18.cpp(34) : error C2653: 'vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *> >' : is not a class or namespace name
+d:\code_secret\5_18\5_18.cpp(34) : error C2146: syntax error : missing ';' before identifier 'iter'
+d:\code_secret\5_18\5_18.cpp(34) : error C2440: '=' : cannot convert from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > ** ' to 'int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+d:\code_secret\5_18\5_18.cpp(34) : error C2446: '!=' : no conversion from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > ** ' to 'int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+d:\code_secret\5_18\5_18.cpp(34) : error C2040: '!=' : 'int' differs in levels of indirection from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > ** '
+d:\code_secret\5_18\5_18.cpp(34) : error C2143: syntax error : missing ')' before '++'
+d:\code_secret\5_18\5_18.cpp(34) : warning C4552: '!=' : operator has no effect; expected operator with side-effect
+d:\code_secret\5_18\5_18.cpp(34) : error C2059: syntax error : ';'
+d:\code_secret\5_18\5_18.cpp(34) : error C2059: syntax error : ')'
+d:\code_secret\5_18\5_18.cpp(35) : error C2143: syntax error : missing ';' before '{'
+d:\code_secret\5_18\5_18.cpp(36) : error C2100: illegal indirection
+d:\code_secret\5_18\5_18.cpp(36) : error C2541: delete : cannot delete objects that are not pointers
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+5_18.exe - 32 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

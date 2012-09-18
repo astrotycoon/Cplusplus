@@ -1,0 +1,30 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: type - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13D.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/type.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"D:\code_secret\type\type.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP13D.tmp" 
+<h3>Output Window</h3>
+Compiling...
+type.c
+D:\code_secret\type\type.c(9) : warning C4305: 'initializing' : truncation from 'const double ' to 'float '
+D:\code_secret\type\type.c(18) : warning C4013: 'foo' undefined; assuming extern returning int
+D:\code_secret\type\type.c(8) : warning C4101: 'b' : unreferenced local variable
+D:\code_secret\type\type.c(8) : warning C4101: 'c' : unreferenced local variable
+D:\code_secret\type\type.c(26) : warning C4716: 'foo' : must return a value
+
+
+
+<h3>Results</h3>
+type.obj - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>

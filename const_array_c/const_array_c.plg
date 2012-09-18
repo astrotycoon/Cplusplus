@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: const_array_c - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8B.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/const_array_c.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\code_secret\const_array_c\const_array_c.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8B.tmp" 
+<h3>Output Window</h3>
+Compiling...
+const_array_c.c
+D:\code_secret\const_array_c\const_array_c.c(16) : error C2065: 'NUM' : undeclared identifier
+D:\code_secret\const_array_c\const_array_c.c(16) : error C2146: syntax error : missing ';' before identifier 'number'
+D:\code_secret\const_array_c\const_array_c.c(16) : error C2065: 'number' : undeclared identifier
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+const_array_c.obj - 3 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

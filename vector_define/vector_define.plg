@@ -1,0 +1,31 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: vector_define - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP141.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/vector_define.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"D:\code_secret\vector_define\vector_define.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP141.tmp" 
+<h3>Output Window</h3>
+Compiling...
+vector_define.cpp
+D:\code_secret\vector_define\vector_define.cpp(42) : error C2955: 'vector' : use of class template requires template argument list
+        d:\program files\vc98\include\vector(244) : see declaration of 'vector'
+D:\code_secret\vector_define\vector_define.cpp(42) : error C2955: 'vector' : use of class template requires template argument list
+        d:\program files\vc98\include\vector(244) : see declaration of 'vector'
+D:\code_secret\vector_define\vector_define.cpp(42) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+vector_define.obj - 3 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

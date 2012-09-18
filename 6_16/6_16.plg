@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 6_16 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF6.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/6_16.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\code_secret\6_16\6_16.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPF6.tmp" 
+<h3>Output Window</h3>
+Compiling...
+6_16.cpp
+d:\code_secret\6_16\6_16.cpp(8) : error C2653: 'vector<int,class std::allocator<int> >' : is not a class or namespace name
+d:\code_secret\6_16\6_16.cpp(8) : error C2065: 'const_iterator' : undeclared identifier
+d:\code_secret\6_16\6_16.cpp(8) : error C2146: syntax error : missing ')' before identifier 'ivec1_iter'
+d:\code_secret\6_16\6_16.cpp(8) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+d:\code_secret\6_16\6_16.cpp(8) : error C2653: 'vector<int,class std::allocator<int> >' : is not a class or namespace name
+d:\code_secret\6_16\6_16.cpp(8) : error C2653: 'vector<int,class std::allocator<int> >' : is not a class or namespace name
+d:\code_secret\6_16\6_16.cpp(8) : error C2059: syntax error : ')'
+d:\code_secret\6_16\6_16.cpp(45) : error C2653: 'vector<int,class std::allocator<int> >' : is not a class or namespace name
+d:\code_secret\6_16\6_16.cpp(45) : error C2065: 'size_type' : undeclared identifier
+d:\code_secret\6_16\6_16.cpp(45) : error C2146: syntax error : missing ';' before identifier 'ivec1_size'
+d:\code_secret\6_16\6_16.cpp(45) : error C2065: 'ivec1_size' : undeclared identifier
+d:\code_secret\6_16\6_16.cpp(46) : error C2653: 'vector<int,class std::allocator<int> >' : is not a class or namespace name
+d:\code_secret\6_16\6_16.cpp(46) : error C2146: syntax error : missing ';' before identifier 'ivec2_size'
+d:\code_secret\6_16\6_16.cpp(46) : error C2065: 'ivec2_size' : undeclared identifier
+d:\code_secret\6_16\6_16.cpp(87) : error C2653: 'vector<int,class std::allocator<int> >' : is not a class or namespace name
+d:\code_secret\6_16\6_16.cpp(87) : error C2146: syntax error : missing ')' before identifier 'ivec1_iter'
+d:\code_secret\6_16\6_16.cpp(87) : error C2086: 'is_prefix' : redefinition
+d:\code_secret\6_16\6_16.cpp(87) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+d:\code_secret\6_16\6_16.cpp(87) : error C2653: 'vector<int,class std::allocator<int> >' : is not a class or namespace name
+d:\code_secret\6_16\6_16.cpp(87) : error C2653: 'vector<int,class std::allocator<int> >' : is not a class or namespace name
+d:\code_secret\6_16\6_16.cpp(87) : error C2059: syntax error : ')'
+d:\code_secret\6_16\6_16.cpp(88) : error C2143: syntax error : missing ';' before '{'
+d:\code_secret\6_16\6_16.cpp(88) : error C2447: missing function header (old-style formal list?)
+d:\code_secret\6_16\6_16.cpp(101) : error C2653: 'vector<int,class std::allocator<int> >' : is not a class or namespace name
+d:\code_secret\6_16\6_16.cpp(101) : error C2146: syntax error : missing ';' before identifier 'index'
+d:\code_secret\6_16\6_16.cpp(101) : error C2065: 'index' : undeclared identifier
+d:\code_secret\6_16\6_16.cpp(101) : error C2143: syntax error : missing ')' before '++'
+d:\code_secret\6_16\6_16.cpp(101) : warning C4552: '!=' : operator has no effect; expected operator with side-effect
+d:\code_secret\6_16\6_16.cpp(101) : error C2059: syntax error : ';'
+d:\code_secret\6_16\6_16.cpp(101) : error C2059: syntax error : ')'
+d:\code_secret\6_16\6_16.cpp(102) : error C2143: syntax error : missing ';' before '{'
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+6_16.obj - 28 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

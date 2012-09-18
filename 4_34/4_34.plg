@@ -1,0 +1,58 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 4_34 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4DE.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/4_34.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\code_secret\4_34\4_34.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP4DE.tmp" 
+<h3>Output Window</h3>
+Compiling...
+4_34.cpp
+d:\code_secret\4_34\4_34.cpp(9) : error C2039: 'size_t' : is not a member of 'std'
+d:\code_secret\4_34\4_34.cpp(9) : error C2868: 'size_t' : illegal syntax for using-declaration; expected qualified-name
+d:\code_secret\4_34\4_34.cpp(11) : error C2039: 'strncpy' : is not a member of 'std'
+d:\code_secret\4_34\4_34.cpp(11) : error C2873: 'strncpy' : symbol cannot be used in a using-declaration
+d:\code_secret\4_34\4_34.cpp(23) : error C2653: 'vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' : is not a class or namespace name
+d:\code_secret\4_34\4_34.cpp(23) : error C2065: 'size_type' : undeclared identifier
+d:\code_secret\4_34\4_34.cpp(23) : error C2146: syntax error : missing ';' before identifier 'strvec_size'
+d:\code_secret\4_34\4_34.cpp(23) : error C2065: 'strvec_size' : undeclared identifier
+d:\code_secret\4_34\4_34.cpp(27) : error C2653: 'vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > >' : is not a class or namespace name
+d:\code_secret\4_34\4_34.cpp(27) : error C2065: 'const_iterator' : undeclared identifier
+d:\code_secret\4_34\4_34.cpp(27) : error C2146: syntax error : missing ';' before identifier 'iter'
+d:\code_secret\4_34\4_34.cpp(27) : error C2065: 'iter' : undeclared identifier
+d:\code_secret\4_34\4_34.cpp(27) : error C2440: '=' : cannot convert from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *' to 'int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+d:\code_secret\4_34\4_34.cpp(27) : error C2446: '!=' : no conversion from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *' to 'int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+d:\code_secret\4_34\4_34.cpp(27) : error C2040: '!=' : 'int' differs in levels of indirection from 'class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > *'
+d:\code_secret\4_34\4_34.cpp(27) : error C2143: syntax error : missing ')' before '++'
+d:\code_secret\4_34\4_34.cpp(27) : warning C4552: '!=' : operator has no effect; expected operator with side-effect
+d:\code_secret\4_34\4_34.cpp(27) : error C2059: syntax error : ';'
+d:\code_secret\4_34\4_34.cpp(27) : error C2059: syntax error : ')'
+d:\code_secret\4_34\4_34.cpp(28) : error C2143: syntax error : missing ';' before '{'
+d:\code_secret\4_34\4_34.cpp(29) : error C2100: illegal indirection
+d:\code_secret\4_34\4_34.cpp(29) : error C2228: left of '.size' must have class/struct/union type
+d:\code_secret\4_34\4_34.cpp(31) : error C2100: illegal indirection
+d:\code_secret\4_34\4_34.cpp(31) : error C2228: left of '.c_str' must have class/struct/union type
+d:\code_secret\4_34\4_34.cpp(31) : error C2100: illegal indirection
+d:\code_secret\4_34\4_34.cpp(31) : error C2228: left of '.size' must have class/struct/union type
+d:\code_secret\4_34\4_34.cpp(42) : error C2374: 'index' : redefinition; multiple initialization
+        d:\code_secret\4_34\4_34.cpp(25) : see declaration of 'index'
+d:\code_secret\4_34\4_34.cpp(47) : error C2374: 'index' : redefinition; multiple initialization
+        d:\code_secret\4_34\4_34.cpp(25) : see declaration of 'index'
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+4_34.obj - 27 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

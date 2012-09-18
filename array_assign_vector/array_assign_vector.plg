@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: array_assign_vector - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP282.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/array_assign_vector.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\code_secret\array_assign_vector\array_assign_vector.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP282.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP283.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/array_assign_vector.pdb" /debug /machine:I386 /out:"Debug/array_assign_vector.exe" /pdbtype:sept 
+.\Debug\array_assign_vector.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP283.tmp"
+<h3>Output Window</h3>
+Compiling...
+array_assign_vector.cpp
+D:\code_secret\array_assign_vector\array_assign_vector.cpp(15) : error C2653: 'vector<int,class std::allocator<int> >' : is not a class or namespace name
+D:\code_secret\array_assign_vector\array_assign_vector.cpp(15) : error C2955: 'iterator' : use of class template requires template argument list
+        d:\program files\vc98\include\utility(71) : see declaration of 'iterator'
+D:\code_secret\array_assign_vector\array_assign_vector.cpp(15) : error C2514: 'std::iterator' : class has no constructors
+        d:\program files\vc98\include\utility(71) : see declaration of 'iterator'
+D:\code_secret\array_assign_vector\array_assign_vector.cpp(15) : error C2262: 'iter' : cannot be destroyed
+D:\code_secret\array_assign_vector\array_assign_vector.cpp(15) : error C2039: 'endl' : is not a member of 'vector<int,class std::allocator<int> >'
+D:\code_secret\array_assign_vector\array_assign_vector.cpp(15) : error C2675: unary '++' : 'struct std::iterator' does not define this operator or a conversion to a type acceptable to the predefined operator
+D:\code_secret\array_assign_vector\array_assign_vector.cpp(17) : error C2100: illegal indirection
+D:\code_secret\array_assign_vector\array_assign_vector.cpp(17) : error C2679: binary '<<' : no operator defined which takes a right-hand operand of type 'struct std::iterator' (or there is no acceptable conversion)
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+array_assign_vector.exe - 8 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

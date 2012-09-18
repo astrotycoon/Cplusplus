@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "const_array_c", "const_array_c.vcxproj", "{823FEBA1-2731-785B-4CE6-D215E8F884A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{823FEBA1-2731-785B-4CE6-D215E8F884A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{823FEBA1-2731-785B-4CE6-D215E8F884A2}.Debug|Win32.Build.0 = Debug|Win32
+		{823FEBA1-2731-785B-4CE6-D215E8F884A2}.Release|Win32.ActiveCfg = Release|Win32
+		{823FEBA1-2731-785B-4CE6-D215E8F884A2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

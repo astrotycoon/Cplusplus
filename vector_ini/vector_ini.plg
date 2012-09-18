@@ -1,0 +1,41 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: vector_ini - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP70.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Debug/" /Fp"Debug/vector_ini.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"D:\code_secret\vector_ini\vector_ini.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP70.tmp" 
+<h3>Output Window</h3>
+Compiling...
+vector_ini.cpp
+D:\code_secret\vector_ini\vector_ini.cpp(25) : error C2653: 'vector<int,class std::allocator<int> >' : is not a class or namespace name
+D:\code_secret\vector_ini\vector_ini.cpp(25) : error C2065: 'const_iterator' : undeclared identifier
+D:\code_secret\vector_ini\vector_ini.cpp(25) : error C2146: syntax error : missing ';' before identifier 'citer'
+D:\code_secret\vector_ini\vector_ini.cpp(25) : error C2065: 'citer' : undeclared identifier
+D:\code_secret\vector_ini\vector_ini.cpp(25) : error C2440: '=' : cannot convert from 'int *' to 'int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+D:\code_secret\vector_ini\vector_ini.cpp(25) : error C2446: '!=' : no conversion from 'int *' to 'int'
+        This conversion requires a reinterpret_cast, a C-style cast or function-style cast
+D:\code_secret\vector_ini\vector_ini.cpp(25) : error C2040: '!=' : 'int' differs in levels of indirection from 'int *'
+D:\code_secret\vector_ini\vector_ini.cpp(25) : error C2143: syntax error : missing ')' before '++'
+D:\code_secret\vector_ini\vector_ini.cpp(25) : warning C4552: '!=' : operator has no effect; expected operator with side-effect
+D:\code_secret\vector_ini\vector_ini.cpp(25) : error C2059: syntax error : ';'
+D:\code_secret\vector_ini\vector_ini.cpp(25) : error C2059: syntax error : ')'
+D:\code_secret\vector_ini\vector_ini.cpp(26) : error C2143: syntax error : missing ';' before '{'
+D:\code_secret\vector_ini\vector_ini.cpp(27) : error C2100: illegal indirection
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+vector_ini.obj - 12 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
