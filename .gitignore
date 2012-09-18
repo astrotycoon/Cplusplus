@@ -2,7 +2,7 @@
 *.dsw
 *ncb
 *.opt
-.plg
+*.plg
 *.sln
 *.vcproj
 *.html
@@ -16,7 +16,4 @@
 *.sbr
 *.idb
 *.pdb
-
-
-
 
