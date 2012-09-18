@@ -16,4 +16,8 @@
 *.sbr
 *.idb
 *.pdb
+*.htm
+*.res
+*.dep
+*.suo
 
