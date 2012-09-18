@@ -54,11 +54,11 @@ int main(int argc, const char *argv[])
 	{
 		if (*iter == 3)
 		{
-//			iter = ivec.erase(iter);	// ok
-//			continue;
-//			ivec.erase(iter);
-			iter = ivec.insert(iter++, 300);
-			iter += 2;
+			iter = ivec.erase(iter);	// ok
+//			ivec.erase(iter);			// error
+//			ivec.erase(iter++);			// error
+//			iter = ivec.insert(iter++, 300);
+//			iter += 2;
 		}
 		else
 			++iter;
@@ -70,11 +70,11 @@ int main(int argc, const char *argv[])
 	{
 		if (*iter_list == 3)
 		{
-//			iter_list = ilist.erase(iter_list);		// ok
+			iter_list = ilist.erase(iter_list);		// ok
 //			ilist.erase(iter_list++);				// ok
-			iter_list = ilist.insert(iter_list, 300);
-			++iter_list;
-			++iter_list;
+//			iter_list = ilist.insert(iter_list, 300);
+//			++iter_list;
+//			++iter_list;		// ²»ÄÜÊÇ iter += 2;
 		}
 		else
 			++iter_list;
