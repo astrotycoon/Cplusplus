@@ -1,1 +1,1 @@
-Ñ§Ï°C++, ¡¶C++ Primer¡·
+learn C++, ¡¶C++ Primer¡·
