@@ -31,10 +31,10 @@ template<typename T1>
 template<typename T1, typename T2>
 void erase_value(T1 &container, const T2 value)
 {
-	T1::iterator beg = container.begin();
+	typename T1::iterator beg = container.begin();
 	while (beg != container.end())
 	{
-		T1::iterator iter_find = find(beg, container.end(), value);
+		typename T1::iterator iter_find = find(beg, container.end(), value);
 		if (iter_find != container.end())
 		{
 			beg = container.erase(iter_find);
