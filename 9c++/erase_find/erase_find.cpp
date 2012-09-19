@@ -5,8 +5,8 @@
 	using std::vector;
 #include <string>
 	using std::string;
-#include <algorithm>
-	using std::find;
+//#include <algorithm>
+//	using std::find;
 #include <list>
 	using std::list;
 #include <deque>
@@ -27,6 +27,22 @@ template<typename T1>
 			cout << *beg++ << endl;
 	}
 }
+
+////////////////////////////////find函数实现/////////////////////////////////////
+template<typename T1, typename T2>
+T1 find(T1 beg, T1 end, const T2 value)
+{
+	while (beg != end)
+	{
+		if (*beg == value)
+		{
+			break;
+		}
+		beg++;
+	}
+	return beg;
+}
+////////////////////////////////find函数实现/////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
 template<typename T1, typename T2>
 void erase_value(T1 &container, const T2 value)
@@ -43,7 +59,7 @@ void erase_value(T1 &container, const T2 value)
 			++beg;
 	}
 }
-/////////////////////////////////////////////////////////////////////////////////
+
 int main(int argc, const char *argv[])
 {
 	string str[] = {"love", "hello", "world", "vim", "hello", "tom", "hello", "hello", "hello", "astrol", "tome", "jmp"};

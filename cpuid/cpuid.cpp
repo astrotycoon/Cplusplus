@@ -18,15 +18,15 @@ DWORD dedx;
 
 void ExeCPUID(DWORD veax)  //初始化CPU
 {
-__asm
-{
-    mov eax,veax
-    cpuid
-    mov deax,eax
-    mov debx,ebx
-    mov decx,ecx
-    mov dedx,edx
-}
+	__asm
+	{
+		mov eax,veax
+		cpuid
+		mov deax,eax
+		mov debx,ebx
+		mov decx,ecx
+		mov dedx,edx
+	}
 }
 
 /*    在Intel Pentium以上级别的CPU中，有一个称为“时间戳（Time Stamp）”的部件，
@@ -88,7 +88,7 @@ string GetCPUType()
     
     for(DWORD t = 0 ; t < 3 ; t++ )
     {
-        ExeCPUID(id+t);
+        ExeCPUID(id+t);	//初始化
         //每次循环结束,保存信息到数组
         memcpy(CPUType+16*t+ 0,&deax,4);
         memcpy(CPUType+16*t+ 4,&debx,4);
