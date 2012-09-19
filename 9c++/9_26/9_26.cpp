@@ -22,20 +22,21 @@ int main(int argc, const char *argv[])
 		if (*ivec_iter % 2 == 0)
 		{
 			ivec_iter = ivec.erase(ivec_iter);
-			--ivec_iter;
 		}
-		++ivec_iter;
+		else
+			++ivec_iter;
 	}
 	show(ivec.begin(), ivec.end());
 ///////////////////////////////////////////////////////////////////////////////////
-	list<int>::iterator ilist_iter = ilist.begin();
+	std::list<int>::iterator ilist_iter = ilist.begin();
 	while (ilist_iter != ilist.end())
 	{
 		if (*ilist_iter % 2 != 0)
 		{
-			ilist.erase(ilist_iter--);
+			ilist_iter = ilist.erase(ilist_iter);
 		}
-		++ilist_iter;
+		else
+			++ilist_iter;
 	}
 	show(ilist.begin(), ilist.end());
 ////////////////////////////////////////////////////////////////////////////////////
