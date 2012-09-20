@@ -10,7 +10,7 @@
 *.exe
 *.manifest
 *.ilk
-*obj
+*.obj
 *.pch
 *.pdb
 *.sbr
