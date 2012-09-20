@@ -20,4 +20,11 @@
 *.res
 *.dep
 *.suo
+*.sdf
+*.sln
+*.vcproj
+*.vcxproj
+*.filters
+*.ncb
+*.user
 
