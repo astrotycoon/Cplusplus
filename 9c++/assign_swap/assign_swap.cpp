@@ -37,7 +37,8 @@ int main(int argc, const char *argv[])
 	show(ivec2.begin(), ivec2.end());
 /*
 	cout << endl;
-	ivec1.swap(ivec2);		// swap函数做的仅仅是将两个vector的名字互换，而assign则将左操作数的原来内容完全删除，在分配分配
+	ivec1.swap(ivec2);		// swap函数做的仅仅是将两个vector的名字互换，而assign则将左操作数的原来内容完全删除，再插入
+							// swap函数不会使iterator失效，因为swap函数并没有使内存数据发生改变， 只是iterator的意义发生了改变
 	cout << "ivec1: ";
 	show(ivec1.begin(), ivec1.end());
 	cout << "ivec2: ";
@@ -53,6 +54,12 @@ int main(int argc, const char *argv[])
 	cout << endl;
 	show(ivec1_beg, ivec1_end);
 	show(ivec2_beg, ivec2_end);
+
+	cout << ivec1.max_size() << endl;
+	cout << ivec2.max_size() << endl;
+
+	cout << ivec1.capacity() << endl;
+//	cout << ivec1.reserve(10)  << endl;
 
 	return 0;
 }
