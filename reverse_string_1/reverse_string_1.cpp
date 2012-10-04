@@ -20,6 +20,7 @@ char *reverse_string_14(char *string);
 char *reverse_string_15(char *string);
 char *reverse_string_16(char *string);
 char *reverse_string_17(char *string);
+char *reverse_string_18(char *string);
 
 void reverse_show_string(char *string);
 
@@ -52,6 +53,7 @@ int main(int argc, const char *argv[])
 	printf("16: %s\n", reverse_string_16(string));
 	printf("16: %s\n", reverse_string_16(string));
 	printf("17: %s\n", reverse_string_17(string));
+	printf("18: %s\n", reverse_string_18(string));
 //-----------------------------------------
 	printf("reverse show : ");
 	reverse_show_string(string);
@@ -60,7 +62,7 @@ int main(int argc, const char *argv[])
 	return 0;
 }
 
-char *reverse_string_0(char *beg, char *end)
+char *reverse_string_0(char *beg, char *end)	
 {
 	if (beg < end)
 	{
@@ -72,7 +74,7 @@ char *reverse_string_0(char *beg, char *end)
 	return beg;
 }
 
-char *reverse_string_1(char *beg, char *end)
+char *reverse_string_1(char *beg, char *end)  
 {
 	char *pret = beg;
 	while (beg < end)
@@ -201,24 +203,36 @@ char *reverse_string_9(char *string)
 
 char *reverse_string_10(char *string)
 {
-	if (*string != '\0')
+	if (*string != '\0' && *(string + 1) != '\0')
 	{
-		char *pstring = string;
-		while (*pstring++);	
-		pstring -= 2;		// find end of string 
-		char pend = *pstring;
-		while (pstring != string)
-		{
-			*pstring = *(pstring - 1);
-			--pstring;
-		}
-		*pstring = pend;
-		reverse_string_10(string + 1);
+		char temp = *string;
+		char *next = reverse_string_10(string + 1);
+		memmove(string, next, strlen(next));
+		string[strlen(string) - 1] = temp;
 	}
 	return string;
 }
 
 char *reverse_string_11(char *string)
+{
+	if (*string != '\0')
+	{
+		char *pstring = string;
+		while (*pstring++);	
+		pstring -= 2;		// find end of string 
+		char end = *pstring;
+		while (pstring != string)
+		{
+			*pstring = *(pstring - 1);
+			--pstring;
+		}
+		*pstring = end;
+		reverse_string_11(string + 1);
+	}
+	return string;
+}
+
+char *reverse_string_12(char *string)
 {
 	int length = strlen(string);
 	char temp = string[0];
@@ -230,20 +244,20 @@ char *reverse_string_11(char *string)
 			*pstring = *(pstring + 1);
 			++pstring;
 		} while (*pstring);	// while (*pstring != '\0')
-		reverse_string_11(string);
+		reverse_string_12(string);
 		string[length - 1] = temp;
 	}
 	return string;
 }
 
-char *reverse_string_12(char *string)
+char *reverse_string_13(char *string)
 {
 	int length = strlen(string);
 	if (length > 1)
 	{
 		char temp = string[length - 1];
 		string[length - 1] = '\0';
-		reverse_string_12(string);
+		reverse_string_13(string);
 		while (length > 0)
 		{
 			string[length] = string[length - 1];
@@ -254,12 +268,12 @@ char *reverse_string_12(char *string)
 	return string;
 }
 
-char *reverse_string_13(char *string)
+char *reverse_string_14(char *string)
 {
 	if (*string != '\0' && *(string + 1) != '\0')
 	{
 		char *pstring = string;
-		reverse_string_13(string + 1);
+		reverse_string_14(string + 1);
 		while (*(pstring + 1) != '\0')
 		{
 			*pstring ^= *(pstring + 1);
@@ -271,26 +285,26 @@ char *reverse_string_13(char *string)
 	return string;
 }
 
-char *reverse_string_14(char *string)
+char *reverse_string_15(char *string)
 {
 	int length = strlen(string);
 	if (length > 1)
 	{
 		int index;
 		char *pstring = string + ((length & 1) ? (length / 2 + 1) : (length / 2));	
-		reverse_string_14(pstring);
+		reverse_string_15(pstring);
 		for (index = 0; index < length / 2; index++)
 		{
 			char temp = string[index];
 			string[index] = pstring[index];
 			pstring[index] = temp;
 		}
-		reverse_string_14(pstring);
+		reverse_string_15(pstring);
 	}
 	return string;
 }
 
-char *reverse_string_15(char *string)
+char *reverse_string_16(char *string)
 {
 	static int n;
 	static char *pstring;
@@ -310,13 +324,13 @@ char *reverse_string_15(char *string)
 			pcurrent--;
 		}
 		*pcurrent = first;
-		reverse_string_15(string + 1);
+		reverse_string_16(string + 1);
 	}
 	n = 0;
 	return string;
 }
 
-char *reverse_string_16(char *string)
+char *reverse_string_17(char *string)
 {
 	static int n;
 	static char *pend;
@@ -333,13 +347,13 @@ char *reverse_string_16(char *string)
 		*pend ^= *string;
 		*string ^= *pend;
 		pend--;
-		reverse_string_16(string + 1);
+		reverse_string_17(string + 1);
 	}
 	n = 0;
 	return string;
 }
 
-char *reverse_string_17(char *string)
+char *reverse_string_18(char *string)
 {
 	static int n;
 	static int length;
@@ -355,7 +369,7 @@ char *reverse_string_17(char *string)
 		string[0] = string[length - 1];
 		string[length - 1] = temp;
 		length -= 2;
-		reverse_string_17(string + 1);
+		reverse_string_18(string + 1);
 	}
 	n = 0;
 	return string;
