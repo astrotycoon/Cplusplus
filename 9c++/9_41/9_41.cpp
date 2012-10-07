@@ -14,6 +14,7 @@ int main(int argc, const char *argv[])
 	string lastName("AnnaP");
 	string salute = greet(generic1, lastName, generic2, 5, 4);
 	cout << salute << endl;
+
 	return 0;
 }
 
@@ -21,10 +22,12 @@ string greet(string form, string lastname, string title, string::size_type pos, 
 {
 	string::size_type pos_form = form.find("Daisy");
 	form.replace(form.begin() + pos_form, form.begin() + pos_form + strlen("Daisy"), lastname);
+
 	pos_form = form.find("Ms");
 	string::iterator iter1 = title.begin() + pos;
 	string::iterator iter2 = title.begin() + pos + length;
 	form.replace(form.begin() + pos_form, form.begin() + pos_form + strlen("Ms"), iter1, iter2);
+
 	return form;
 }
 
